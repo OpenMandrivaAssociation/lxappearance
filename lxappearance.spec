@@ -1,16 +1,16 @@
 Summary:	A new feature-rich GTK+ theme switcher
 Name:     	lxappearance
-Version:	0.5.1
-Release:	10
+Version:	0.6.3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://lxde.sourceforge.net/
-Source0: 	http://downloads.sourceforge.net/project/lxde/%{name}-%version.tar.gz
+Source0: 	http://sourceforge.net/lxde/%{name}-%version.tar.gz
 Patch0:		po.fuzzy.patch
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-x11-2.0)
-Suggests: 	lxappearance-obconf
+Recommends: 	lxappearance-obconf
 
 %description
 LXAppearance is a new GTK+ theme switcher developed for project LXDE.
@@ -29,11 +29,11 @@ This package contains header files needed when building applications based on
 %patch0 -p0
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{name}
 
