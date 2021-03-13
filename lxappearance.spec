@@ -32,6 +32,7 @@ This package contains header files needed when building applications based on
 %setup -q
 
 %build
+autoreconf --install
 %configure --enable-dbus --enable-gtk3
 %make_build
 
