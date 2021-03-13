@@ -1,0 +1,11 @@
+--- lxappearance-127d0de/man/Makefile.am	2019-02-24 17:35:18.000000000 +0100
++++ lxappearance-127d0de/man/Makefile.am.new	2019-03-04 12:43:09.056855209 +0100
+@@ -12,7 +12,7 @@
+ if ENABLE_MAN
+ 
+ lxappearance.1: lxappearance.xml
+-	$(XSLTPROC) -nonet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl $<
++	xsltproc -nonet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl $<
+ 
+ CLEANFILES = $(man_MANS)
+ else
