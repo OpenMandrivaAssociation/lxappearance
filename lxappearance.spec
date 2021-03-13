@@ -8,7 +8,12 @@ Url:		http://lxde.sourceforge.net/
 Source0: 	http://sourceforge.net/lxde/%{name}-%{version}.tar.xz
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
-BuildRequires:	pkgconfig(gtk+-x11-2.0)
+BuildRequires:	pkgconfig(dbus-1)
+BuildRequires:	pkgconfig(dbus-glib-1)
+BuildRequires:	pkgconfig(gmodule-export-2.0)
+BuildRequires:	pkgconfig(gthread-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(x11)
 Recommends: 	lxappearance-obconf
 
 %description
@@ -27,7 +32,7 @@ This package contains header files needed when building applications based on
 %setup -q
 
 %build
-%configure
+%configure --enable-dbus --enable-gtk3
 %make_build
 
 %install
@@ -50,4 +55,3 @@ desktop-file-install --vendor="" \
 %files devel
 %{_includedir}/%{name}/*.h
 %{_libdir}/pkgconfig/lxappearance.pc
-
