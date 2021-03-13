@@ -10,6 +10,7 @@ Patch0:		lxappearance-fix-man-patch
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	xsltproc
+BuildRequires:	docbook-xsl
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gmodule-export-2.0)
