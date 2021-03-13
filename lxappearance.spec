@@ -6,8 +6,10 @@ License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://lxde.sourceforge.net/
 Source0: 	http://sourceforge.net/lxde/%{name}-%{version}.tar.xz
+Patch0:		lxappearance-fix-man-patch
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
+BuildRequires:	xsltproc
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gmodule-export-2.0)
@@ -30,6 +32,7 @@ This package contains header files needed when building applications based on
 
 %prep
 %setup -q
+%autosetup -p1
 
 %build
 autoreconf --install
