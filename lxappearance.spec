@@ -60,6 +60,7 @@ This package contains header files needed when building applications based on
 autoreconf -fiv
 %configure \
 	--enable-dbus \
+	--enable-gtk3 \
 	%{nil}
 %make_build
 
