@@ -16,9 +16,11 @@ Url:		http://lxde.sourceforge.net/
 Source0:	https://github.com/lxde/lxappearance/archive/%{?snapshot:%{commit}}%{!?snapshot:%{version}}/%{name}-%{?snapshot:%{commit}}%{!?snapshot:%{version}}.tar.gz
 #Patch0:		lxappearance-fix-man-patch
 BuildRequires:	desktop-file-utils
+BuildRequires:	docbook-to-man
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	docbook-style-xsl
 BuildRequires:	intltool
 BuildRequires:	xsltproc
-BuildRequires:	docbook-xsl
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gmodule-export-2.0)
