@@ -61,6 +61,7 @@ autoreconf -fiv
 %configure \
 	--enable-dbus \
 	--enable-gtk3 \
+	--enable-man \
 	%{nil}
 %make_build
 
