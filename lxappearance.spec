@@ -12,7 +12,7 @@ Version:	0.6.3
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Url:		http://lxde.sourceforge.net/
+Url:		https://lxde.sourceforge.net/
 Source0:	https://github.com/lxde/lxappearance/archive/%{?snapshot:%{commit}}%{!?snapshot:%{version}}/%{name}-%{?snapshot:%{commit}}%{!?snapshot:%{version}}.tar.gz
 #Patch0:		lxappearance-fix-man-patch
 BuildRequires:	desktop-file-utils
