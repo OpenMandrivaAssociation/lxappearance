@@ -1,15 +1,15 @@
 # git snapshot
 %global snapshot 1
 %if 0%{?snapshot}
-	%global commit		655fd083a98e7b11d61119bdf0d97aae6c774780
-	%global commitdate	20230917
+	%global commit		95d5b02e901b0bf33c5ab037a88b8c054a3f818f
+	%global commitdate	20240817
 	%global shortcommit	%(c=%{commit}; echo ${c:0:7})
 %endif
 
 Summary:	A new feature-rich GTK+ theme switcher
 Name:		lxappearance
 Version:	0.6.3
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		https://lxde.sourceforge.net/
