@@ -15,6 +15,11 @@ Group:		Graphical desktop/Other
 Url:		https://lxde.sourceforge.net/
 Source0:	https://github.com/lxde/lxappearance/archive/%{?snapshot:%{commit}}%{!?snapshot:%{version}}/%{name}-%{?snapshot:%{commit}}%{!?snapshot:%{version}}.tar.gz
 #Patch0:		lxappearance-fix-man-patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	desktop-file-utils
 BuildRequires:	docbook-to-man
 BuildRequires:	docbook-dtd412-xml
